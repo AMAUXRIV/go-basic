@@ -61,6 +61,7 @@ func addStudent() {
 	fmt.Print("Nama: ")
 	name, _ := reader.ReadString('\n')
 	name = strings.TrimSpace(name)
+	nameFilter(name, spamFilter)
 
 	fmt.Print("Umur: ")
 	ageStr, _ := reader.ReadString('\n')
@@ -114,13 +115,11 @@ func updateStudent() {
 	studentIndex--
 	student := students[studentIndex]
 
-
-	
-	
 	fmt.Printf("Nama saat ini: %s\n", student.Name)
 	fmt.Print("Nama baru: ")
 	name, _ := bufio.NewReader(os.Stdin).ReadString(' ')
 	name = strings.TrimSpace(name)
+	nameFilter(name, spamFilter)
 	student.Name = name
 
 	fmt.Printf("Umur saat ini: %d\n", student.Age)
@@ -179,4 +178,26 @@ func delete() {
 
 	students = append(students[:studentIndex], students[studentIndex+1:]...)
 	fmt.Println("Mahasiswa ", student.Name, " berhasil dihapus.")
+}
+
+func nameFilter(name string, filter func(string) string) {
+	nameFiltered := filter(name)
+	fmt.Print(nameFiltered)
+}
+
+func spamFilter(name string) string {
+	slice := []string{
+		"anjing",
+		"babi",
+		"kodok",
+	}
+	for _, value := range slice {
+		if name == value {
+			fmt.Println("Nama tidak valid")
+			main()
+		}
+
+	}
+	return ""
+
 }
