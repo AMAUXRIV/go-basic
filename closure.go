@@ -1,7 +1,10 @@
 /*package main
 
 import "fmt"
-//Fungsi yang dapat disimpan dalam variabel itulah closure berupa anonymous func yakni tanpa nama
+//Fungsi yang dapat disimpan dalam variabel itulah closure dan dia bekerja di dalam scope pribadi dan bisa mengubah diluar scope nya
+// akan tetapi var yang ada di dalamnya tidak dapat di akses diluar scope pribadi 
+// jika ada kesamaan antar variabel diluar scope pribadi maka harus di deklarasi ulang (cek yt pzn :closure)
+// berupa anonymous func yakni tanpa nama
 func main () {
 	var getMinMax = func (n  []int) (int,int){
 		var min,max int
