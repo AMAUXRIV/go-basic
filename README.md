@@ -22,5 +22,5 @@ Pada bagian ini, Anda akan mempelajari tentang konsep Goroutine dan Channel dala
 # Penutup 🩹
 Itulah beberapa sub-topik yang akan Anda pelajari di dalam repository ini. Semoga setelah mempelajari materi-materi dasar tersebut, Anda dapat memulai membangun aplikasi Golang yang lebih kompleks dan efektif. Jika Anda memiliki pertanyaan atau saran, jangan ragu untuk mengirimkan masukan ke kami. Terima kasih telah membaca!
 
-#Contribute ?
+# Contribute ?
 Fork > new Branch > pull request > comment
