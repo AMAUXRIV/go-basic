@@ -59,3 +59,16 @@ func main() {
 	fmt.Println("Ketika changeName2", s1)
 
 }
+
+/* penjelasan tambahan
+	 gunanya fungsi strins.Split()
+	Pada chapter ini ada fungsi baru yang kita gunakan: strings.Split() . Fungsi ini
+	berguna untuk memisah string menggunakan pemisah yang ditentukan sendiri.
+	Hasilnya adalah array berisikan kumpulan substring.
+	strings.Split("ethan hunt", " ")
+// ["ethan", "hunt"]
+
+
+dan apakah strings.Split() itu adalah method syangnya bukan karena 
+strings sendiri itu adalah package sedangkan Split() itu adlah nama fungsinya 
+*/
