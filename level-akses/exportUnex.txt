@@ -3,6 +3,7 @@ property modifier public dan private
 Kapan sebuah struct, fungsi, atau method bisa diakses dari package lain dan kapan tidak.
 Dalam sebuah package pasti kita menuliskan banyak hal seperti var, struct, looping .etc
 
+
 jika dalam 1 program terdapat lebh 1 package atau ada package lain selain main.go 
 maka komponen dalam package lain tersebut tidak bisa diakses secara bebas dari file yang ber packge main karena tiap komponen memiliki hak akses
 
