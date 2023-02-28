@@ -70,5 +70,5 @@ func main() {
 
 
 dan apakah strings.Split() itu adalah method syangnya bukan karena 
-strings sendiri itu adalah package sedangkan Split() itu adlah nama fungsinya 
+strings sendiri itu adalah package sedangkan Split() itu adalah nama fungsinya 
 */
