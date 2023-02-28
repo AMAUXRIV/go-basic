@@ -1,6 +1,6 @@
 
 
-# Property modifier public dan private 
+# Property modifier public dan private 👓
 Kapan sebuah struct, fungsi, atau method bisa diakses dari package lain dan kapan tidak.
 Dalam sebuah package pasti kita menuliskan banyak hal seperti var, struct, looping .etc
 
