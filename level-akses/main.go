@@ -35,4 +35,6 @@ struct yang berada di package lain, selain nama struct-nya harus berbentuk
 exported, properti yang diakses juga harus exported juga.
 */
 
+
 // penjelasan yang  lengkap ada di halaman 121 
+
