@@ -58,9 +58,9 @@ func main () {
 			fmt.Println("Masukan logika :")
 			fmt.Scanf("%s",&Logika)
 			if Logika == "&&"{
-				fmt.Println("True && False \t(%t)", true && false)
+				fmt.Printf("True && False \t(%t)", true && false)
 			}else if Logika == "||"{
-				fmt.Println("True || False \t(%t)", true || false)
+				fmt.Printf("True || False \t(%t)", true || false)
 			}else {
 				fmt.Println("Itu Negasi (!) artinya KEBALIKAN")
 			}
