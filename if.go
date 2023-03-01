@@ -70,7 +70,7 @@ func main () {
 	}
 
 	// if dengan short statement 
-	name := "awok"
+	name := "awokawok"
 	if length := len(name); length >5 {
 		fmt.Println("Nama Terlalu Panjang")
 
