@@ -54,6 +54,7 @@ dengan cara ini tidak perlu menuliskan nama file nya satu per satu.
 /*
 func main() {
 	SayHello("Ujang")
+	purchase("sabun")
 }
 */
 
