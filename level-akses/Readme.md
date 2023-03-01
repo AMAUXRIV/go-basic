@@ -16,3 +16,5 @@ penentuan ini sangat penting
 di golang character case ialah penanda jika diawali dengan capital (Ujang) maka dia public
 jika low (ujang) maka private 
 
+# Cara memakai init ()
+Ada pada partial.go selengkapnya 
