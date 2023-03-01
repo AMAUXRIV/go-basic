@@ -35,5 +35,5 @@ var Student = struct {
 func init(){
 	Student.Grade = 60
 	Student.Name = "Ujang"
-	fmt.Println("-->  library/library.go imported")
+	fmt.Println("--->  library/library.go imported")
 }
