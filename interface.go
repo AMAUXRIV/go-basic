@@ -61,4 +61,6 @@ bangdat.luas()
 
 
 lihat buku pemograman golang dasar noval agung di bagian interface atau di yt pzn
+
+selamat belajar :D
 */
