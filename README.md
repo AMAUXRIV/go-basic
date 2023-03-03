@@ -24,3 +24,7 @@ Itulah beberapa sub-topik yang akan Anda pelajari di dalam repository ini. Semog
 
 # Contribute ?
 Fork > new Branch > pull request > comment
+
+
+https://dasarpemrogramangolang.novalagung.com/
+yt > pzn Golang
