@@ -1,52 +1,66 @@
-package main 
+package main
 
 import "fmt"
 
-type Gaji interface {
-	gaji() int
+type Employee interface {
+	Gaji() int
+	Name() string
 }
 
-type pegawaiTetap struct {
-	nama string
+type Permanent struct {
+	nama  string
 	gapok int
-	tunj int
+	tunj  int
 }
 
-type pegawaiKontrak struct {
-	nama string
+type Contract struct {
+	nama  string
 	gapok int
 }
 
-type freelancer struct {
-	nama string
-	rateJam int
+type Freelancer struct {
+	nama     string
+	rateJam  int
 	totalJam int
-	
-}
-func (pt pegawaiTetap) gaji() int{
-	return pt.tunj + pt.gapok
 }
 
-func (pk pegawaiKontrak) gaji() int {
-	return pk.gapok
+func (p Permanent) Gaji() int {
+	return p.tunj + p.gapok
 }
 
-func (fl freelancer) gaji() int {
-	return fl.rateJam * fl.totalJam
-
+func (p Permanent) Name() string {
+	return p.nama
 }
 
-func main () {
+func (c Contract) Gaji() int {
+	return c.gapok
+}
+
+func (c Contract) Name() string {
+	return c.nama
+}
+
+func (f Freelancer) Gaji() int {
+	return f.rateJam * f.totalJam
+}
+
+func (f Freelancer) Name() string {
+	return f.nama
+}
+
+func main() {
+	employees := []Employee{
+		Permanent{"A", 30000, 2000},
+		Contract{"B", 30000},
+		Freelancer{"amau", 100000, 40},
+	}
+
 	total_pengeluaran := 0
-	pk1 := pegawaiTetap{"A",30000,2000}
-	fmt.Println(pk1.nama,pk1.gaji())
-	pt1 := pegawaiKontrak{"B",30000}
-	fmt.Println(pt1.nama,pt1.gaji())
-	total_pengeluaran += pt1.gaji()
-	free := freelancer{"amau",100000,40}
-	fmt.Println(free.nama,free.gaji())
-	total_pengeluaran += free.gaji()
 
-	fmt.Println("Total Pengeluaran Perusahaan",total_pengeluaran)
+	for _, e := range employees {
+		fmt.Println(e.Name(), e.Gaji())
+		total_pengeluaran += e.Gaji()
+	}
 
+	fmt.Println("Total Pengeluaran Perusahaan:", total_pengeluaran)
 }
