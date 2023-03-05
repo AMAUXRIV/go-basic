@@ -26,5 +26,5 @@ Itulah beberapa sub-topik yang akan Anda pelajari di dalam repository ini. Semog
 Fork > new Branch > pull request > comment
 
 
-https://dasarpemrogramangolang.novalagung.com/
-yt > pzn Golang
+# [Noval Agung](https://dasarpemrogramangolang.novalagung.com/)
+# [Youtube](https://youtu.be/lg3Ke9cFmSE)
