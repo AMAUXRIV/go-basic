@@ -60,7 +60,7 @@ func main() {
 	var name = rahasia.(*warga).nama
 	fmt.Println(name)
 
-	//kombinasi slice , map dan interface
+	//kombinasi slice , map dan interface 
 
 	var student = []map[string]interface{}{
 		{"nama": "ujang", "umur": 21},
