@@ -30,4 +30,4 @@ func main() {
 	if reflectValue.Kind() == reflect.Int {
 		fmt.Println("Nilai nya adalah",reflectValue.Int())
 	}
-}
+} 
