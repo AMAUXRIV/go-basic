@@ -14,6 +14,7 @@ import (
 	"reflect"
 )
 
+/*
 func main() {
 	//mencari tipe data dan value menggunakan reflect
 	var number =23
@@ -30,4 +31,52 @@ func main() {
 	if reflectValue.Kind() == reflect.Int {
 		fmt.Println("Nilai nya adalah",reflectValue.Int())
 	}
-} 
+
+	//pengaksesan juga bisa lewat interface karea interface bisa menampung segala jenis tipe data 
+
+	
+
+	var nilai = reflectValue.Interface().(int)
+
+	fmt.Println("Tipe data nilai",nilai)
+
+
+
+} */
+
+type student struct {
+	Nama string
+	Umur int 
+}
+
+
+func (s *student) getInfo() {
+	var reflectValue= reflect.ValueOf(s)
+
+	if reflectValue.Kind() == reflect.Ptr{
+		reflectValue = reflectValue.Elem()
+	}
+
+	var reflectType = reflectValue.Type()
+
+	for i := 0; i < reflectValue.NumField(); i++{
+		fmt.Println("Nama :",reflectType.Field(i).Name)
+		fmt.Println("Tipe data :",reflectType.Field(i).Type)
+		fmt.Println("nilai :",reflectValue.Field(i).Interface())
+		fmt.Println("")
+		
+		
+	}
+}
+
+
+
+func main () {
+	s1 := &student{Nama:"Umar",Umur:100}
+	s1.getInfo()
+}
+
+
+
+
+
