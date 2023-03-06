@@ -5,7 +5,7 @@ import "fmt"
 
 type Config struct {
 
-	Env string
+	Env string 
 	Proxy Proxy
 }
 
