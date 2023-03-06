@@ -69,6 +69,8 @@ func (s *student) getInfo() {
 	}
 }
 
+//lanjutkan 
+
 
 
 func main () {
