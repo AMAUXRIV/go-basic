@@ -3,7 +3,7 @@ ini adalah sebuah package yang bisa melihat struktur var,tipe,nilai,pointer dan 
 
 Fungsi reflect.ValueOf() akan mengembalikan objek dalam tipe
 reflect.Value , yang berisikan informasi yang berhubungan dengan nilai pada variabel yang dicari.
-Sedangkan reflect.TypeOf() mengembalikan objek dalam tipe reflect.Type . 
+Sedangkan reflect.TypeOf() mengembalikan objek dalam tipe reflect.Type .  
 Objek tersebut berisikan informasi yang berhubungan dengan tipe data variabel yang dicari.
 */
 
