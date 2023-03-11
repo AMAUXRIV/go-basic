@@ -135,6 +135,38 @@ func (ua *UserApp) PayCourse() {
 
 func (ua *UserApp) EditData() {
 	// Kode untuk mengedit data pengguna
+	fmt.Println("=== Edit Data ===")
+	fmt.Println("1. Nama :", ua.User.Name)
+	fmt.Println("2. Umur :", ua.User.Age)
+	fmt.Println("3. Pekerjaan :", ua.User.Occupation)
+	fmt.Println("4. Email :", ua.User.Email)
+	fmt.Println("5. Password :", ua.User.Password)
+	fmt.Println("6. Gender :", ua.User.Gender)
+
+	getUserInput := GetUserInput("Pilih data yang ingin diubah: ")
+	ClearTerminal()
+	choice, err := strconv.Atoi(getUserInput)
+	if err != nil {
+		fmt.Println("Pilihan tidak valid")
+		return
+	}
+
+	switch choice {
+
+	case 1:
+		ua.User.Name = GetUserInput("Masukkan nama baru: ")
+	case 2:
+		ua.User.Occupation = GetUserInput("Masukkan pekerjaan baru: ")
+	case 3:
+		ua.User.Email = GetUserInput("Masukkan email baru: ")
+	case 4:
+		ua.User.Password = GetUserInput("Masukkan password baru: ")
+	case 5:
+		ua.User.Gender = GetUserInput("Masukkan jenis kelamin baru: ")
+	default:
+		fmt.Println("Pilihan tidak valid /  Tidak bisa ubah umur")
+	}
+
 	
 }
 
