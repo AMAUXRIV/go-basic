@@ -106,7 +106,7 @@ func newFunction() {
 		fmt.Println("awesome")
 		fallthrough //Fallthrough pada switch memaksa proses pengecekan dilanjutkan ke case selanjutnya tanpa memperhatikan kondisi, sehingga case selanjutnya dianggap benar meski sebenarnya salah.
 		// Lebih dari satu fallthrough bisa digunakan untuk melanjutkan proses ke case setelahnya.
-	case point < 5:
+	case point > 4:
 		fmt.Println("you need to learn more")
 	default:
 		{

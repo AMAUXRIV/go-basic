@@ -2,20 +2,18 @@ package main
 
 import "fmt"
 
+func main() {
+	avg := calculate(21, 33, 3)
+	msg := fmt.Sprintf("rata ratanya adalah %2f", avg)
+	fmt.Println(msg)
 
-func main () {
-	var numbers = calculate(2,3,4,5,21,3)
-	var result = fmt.Sprintf("rata-rata %2f:",numbers)
-	fmt.Println(result)
 }
 
-func calculate (x ...int) float32{
-	var total = 0
-	for _,value := range x {
+func calculate(x ...int) float32 {
+	total := 0
+	for _, value := range x {
 		total += value
 	}
-
-	var avg = float32(total)/float32(len(x))
+	var avg = float32(total) / float32(len(x))
 	return avg
 }
-

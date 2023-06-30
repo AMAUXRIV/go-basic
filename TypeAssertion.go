@@ -6,10 +6,9 @@ import "fmt"
 //Dan biasanya ada panic saat kita menggunakan Type assertion ini
 //Maka yang lebih aman menggunakan Switch agar bisa di recover
 
-
 func random() interface{} {
 
-	return true
+	return 5
 }
 
 func main() {
@@ -20,14 +19,13 @@ func main() {
 	*/
 	result := random()
 	switch value := result.(type) {
-	case string :
-		fmt.Println("string",value)
-	case int :
-		fmt.Println("int",value)
-	default :
+	case string:
+		fmt.Println("string", value)
+	case int:
+		fmt.Println("int", value)
+	default:
 		fmt.Println("Uknown")
 
 	}
-	
 
 }

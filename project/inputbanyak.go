@@ -1,0 +1,16 @@
+var input string
+fmt.Print("Masukkan angka dipisahkan oleh koma: ")
+fmt.Scan(&input)
+
+// Memisahkan string input berdasarkan koma dan memasukkannya ke dalam slice integer
+var numbers []int
+for _, numStr := range strings.Split(input, ",") {
+    num, err := strconv.Atoi(strings.TrimSpace(numStr))
+    if err != nil {
+        fmt.Printf("Terjadi kesalahan: %v\n", err)
+        return
+    }
+    numbers = append(numbers, num)
+}
+
+fmt.Printf("Angka yang dimasukkan: %v\n", numbers)

@@ -2,49 +2,47 @@ package main
 
 import "fmt"
 
+var i = 0
+
 func main() {
-	i := 1
-	for i <= 3 {
-		fmt.Println(i)
-		i = i + 1
+	for i := 1; i < 5; i++ {
+		fmt.Println("Angka", i)
 	}
 
-	for j := 7; j <= 9; j++ {
-		fmt.Println(j)
-	}
+	// tanpa argumen dihentikannya hanya dengan break
 
+	fmt.Println("Tanpa Argumen")
 	for {
-		fmt.Println("loop")
-		break
+
+		fmt.Println("Angka", i)
+
+		i++
+
+		if i == 5 {
+			break
+		}
+
 	}
 
-	for n := 0; n <= 5; n++ {
-		if n%2 == 0 {
-			continue //
+	// continue dan break
+	fmt.Println("Penggunaan for dengan continue dan break")
+	for i := 1; i < 10; i++ {
+		if i%3 == 0 {
+			continue
 		}
-		fmt.Println(n)
+
+		if i > 8 {
+			break
+		}
+		fmt.Println("Angka :", i)
 	}
-	// membuat segitiga bintang *
-	var b int
-	var c int
-	for b = 1; b <= 5; b++ {
-		for c = 1; c <= b; c++ {
-			fmt.Print("*")
+	//Pemanfaatan for bersarang
+	fmt.Println("For bersarang")
+
+	for i := 5; i < 10; i++ {
+		for j := i; j < 10; j++ {
+			fmt.Print(i, "*")
 		}
 		fmt.Println()
 	}
-}
-
-func rangE() {
-	fmt.Println("==============")
-	nama := []string{"eko", "amau","amu","asu"}
-	for i,value := range nama {
-		if i == 1 {
-			continue
-			// break
-		}else {
-			fmt.Println("index",i,"nama",value)
-		}
-	}
-
 }
